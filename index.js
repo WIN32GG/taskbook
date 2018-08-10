@@ -7,6 +7,10 @@ const taskbookCLI = (input, flags) => {
     return taskbook.displayArchive();
   }
 
+  if (flags.git) {
+    return taskbook.gitCommand(input);
+  }
+
   if (flags.task) {
     return taskbook.createTask(input);
   }
