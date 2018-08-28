@@ -65,7 +65,7 @@ const cli = meow(help, {
       alias: 'e'
     },
     git: {
-      type: '',
+      type: 'boolean',
       alias: 'g'
     },
     move: {
